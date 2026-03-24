@@ -1,0 +1,19 @@
+{
+  "version": 3,
+  "configurePresets": [
+    {
+      "name": "arm-linux-gnueabihf-debug",
+      "toolchainFile": "$env{SDK_ROOT}/buildroot.cmake",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    },
+    {
+      "name": "arm-linux-gnueabihf-release",
+      "toolchainFile": "$env{SDK_ROOT}/buildroot.cmake",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+    }
+  ]
+}
